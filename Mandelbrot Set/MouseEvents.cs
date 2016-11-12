@@ -12,8 +12,7 @@ namespace Mandelbrot_Set
 
 
         //Menu Events
-
-
+        
         private void menuBar(object sender, EventArgs e)
         {
             this.Cursor = Cursors.Default;
