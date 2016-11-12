@@ -1,8 +1,9 @@
 c:\users\solutionone\documents\visual studio 2015\Projects\Mandelbrot Set\Mandelbrot Set\bin\Debug\Mandelbrot Set.exe.config
 c:\users\solutionone\documents\visual studio 2015\Projects\Mandelbrot Set\Mandelbrot Set\bin\Debug\Mandelbrot Set.exe
 c:\users\solutionone\documents\visual studio 2015\Projects\Mandelbrot Set\Mandelbrot Set\bin\Debug\Mandelbrot Set.pdb
-c:\users\solutionone\documents\visual studio 2015\Projects\Mandelbrot Set\Mandelbrot Set\obj\Debug\Mandelbrot_Set.Form1.resources
 c:\users\solutionone\documents\visual studio 2015\Projects\Mandelbrot Set\Mandelbrot Set\obj\Debug\Mandelbrot_Set.Properties.Resources.resources
 c:\users\solutionone\documents\visual studio 2015\Projects\Mandelbrot Set\Mandelbrot Set\obj\Debug\Mandelbrot Set.csproj.GenerateResource.Cache
 c:\users\solutionone\documents\visual studio 2015\Projects\Mandelbrot Set\Mandelbrot Set\obj\Debug\Mandelbrot Set.exe
 c:\users\solutionone\documents\visual studio 2015\Projects\Mandelbrot Set\Mandelbrot Set\obj\Debug\Mandelbrot Set.pdb
+c:\users\solutionone\documents\visual studio 2015\Projects\Mandelbrot Set\Mandelbrot Set\obj\Debug\Mandelbrot Set.csprojResolveAssemblyReference.cache
+c:\users\solutionone\documents\visual studio 2015\Projects\Mandelbrot Set\Mandelbrot Set\obj\Debug\Mandelbrot_Set.MandelbrotSet.resources
