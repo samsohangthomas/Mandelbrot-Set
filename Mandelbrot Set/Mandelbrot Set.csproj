@@ -46,11 +46,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="HSB.cs" />
     <Compile Include="MandelbrotSet.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MandelbrotSet.Designer.cs">
       <DependentUpon>MandelbrotSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MouseEvents.cs">
+      <SubType>Form</SubType>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
