@@ -10,6 +10,19 @@ namespace Mandelbrot_Set
     partial class MandelbrotSet
     {
 
+
+        //Menu Events
+
+
+        private void menuBar(object sender, EventArgs e)
+        {
+            this.Cursor = Cursors.Default;
+        }
+
+
+
+
+
         // mouse Events 
         private void pictureOutputBox_MouseDown(object sender, MouseEventArgs e)
         {

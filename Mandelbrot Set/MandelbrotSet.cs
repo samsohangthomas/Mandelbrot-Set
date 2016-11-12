@@ -41,6 +41,8 @@ namespace Mandelbrot_Set
         }
 
 
+        // Partial class is created for mouse Events
+
 
         private void pictureOutputBox_Paint(object sender, PaintEventArgs e)
         {
@@ -149,9 +151,7 @@ namespace Mandelbrot_Set
             {
                 showStatus("Mandelbrot-Set will be produced - please wait...");
             }
-
-
-
+            
             for (x = 0; x < x1; x += 2)
             {
                 for (y = 0; y < y1; y++)
@@ -203,10 +203,7 @@ namespace Mandelbrot_Set
             return (float)j / (float)MAX;
         }
 
-
-
-
-
+        
         public void showStatus(String status)
         {
             appStatus.Text = status;
