@@ -41,6 +41,9 @@
             this.pictureOutputBox.TabIndex = 0;
             this.pictureOutputBox.TabStop = false;
             this.pictureOutputBox.Paint += new System.Windows.Forms.PaintEventHandler(this.pictureOutputBox_Paint);
+            this.pictureOutputBox.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureOutputBox_MouseDown);
+            this.pictureOutputBox.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pictureOutputBox_MouseMove);
+            this.pictureOutputBox.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureOutputBox_MouseUp);
             // 
             // appStatus
             // 
