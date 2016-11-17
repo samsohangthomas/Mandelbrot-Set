@@ -24,6 +24,8 @@ namespace Mandelbrot_Set
         private static Boolean action, mousePressed, rectangle, finished, first = true;
         private static float xy;
 
+   
+
 
 
         //Bitmap and graphics 
@@ -101,7 +103,7 @@ namespace Mandelbrot_Set
             if (finished)
             {
                 picture = null;
-                g1 = null;
+                //g1 = null;
                 c1 = null;
                 c2 = null;
                 GC.Collect(); // garbage collection
