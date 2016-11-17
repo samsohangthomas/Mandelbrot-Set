@@ -53,11 +53,17 @@
     <Compile Include="IterationForm.Designer.cs">
       <DependentUpon>IterationForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="KeyboardShortcuts.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="MandelbrotSet.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MandelbrotSet.Designer.cs">
       <DependentUpon>MandelbrotSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuEventPartialFunction.cs">
+      <SubType>Form</SubType>
     </Compile>
     <Compile Include="MenuEvents.cs">
       <SubType>Form</SubType>

@@ -34,17 +34,9 @@ namespace Mandelbrot_Set
 
         private void cloneMandelbrot_Click(object sender, EventArgs e)
         {
-            MandelbrotSet obj = new MandelbrotSet();
-
-            obj.xstart = this.xstart;
-            obj.ystart = this.ystart;
-            obj.xende = this.xende;
-            obj.yende = this.yende;
-            obj.xzoom = this.xzoom;
-            obj.yzoom = this.yzoom;
-            obj.Show();
-            obj.mandelbrot();
+            mandelbrotClone();
         }
+
 
 
         private void restartMandelbrot_Click(object sender, EventArgs e)
@@ -57,26 +49,12 @@ namespace Mandelbrot_Set
 
         private void saveMandelbrot_Click(object sender, EventArgs e)
         {
-
-            System.Windows.Forms.SaveFileDialog fileDestination = new SaveFileDialog();
-            fileDestination.Filter = "Images|*.png;*.bmp;*.jpg";
-            ImageFormat format = ImageFormat.Png;
-            if (fileDestination.ShowDialog() == System.Windows.Forms.DialogResult.OK)
-            {
-                string ext = System.IO.Path.GetExtension(fileDestination.FileName);
-                switch (ext)
-                {
-                    case ".jpg":
-                        format = ImageFormat.Jpeg;
-                        break;
-                    case ".bmp":
-                        format = ImageFormat.Bmp;
-                        break;
-                }
-                pictureOutputBox.Image.Save(fileDestination.FileName, format);
-                MessageBox.Show("Successfully saved. Thank you.");
-            }
+            mandelbrotSave();
+          
         }
+
+
+        
 
         //About submenus event
 
@@ -97,9 +75,7 @@ namespace Mandelbrot_Set
 
         private void printMandelbrot_Click(object sender, EventArgs e)
         {
-            PrintDocument mandelbrot = new PrintDocument();
-            mandelbrot.PrintPage += new PrintPageEventHandler(printDocument_PrintPage);
-            mandelbrot.Print();
+            mandelbrotPrint();
         }
 
 
@@ -121,23 +97,33 @@ namespace Mandelbrot_Set
 
         private void defaultIteration_Click(object sender, EventArgs e)
         {
-            MAX = 256;
-            start();
-            iterateStat("Default Iteration 256 Times");
+            setDefaultIterateValue();
+          
         }
-
 
         private void customIteration_Click(object sender, EventArgs e)
         {
+            showCustomIterationForm();
+        }
+
+        public void showCustomIterationForm() {
             IterationForm obj = new IterationForm(this);
             obj.Show();
         }
+
+
+
+
+
 
         public void redraw(int val)
         {
             MAX = val;
             start();
         }
+
+        
+        //Other function
         //clearing pictureOutputBox
 
         private void stop() {

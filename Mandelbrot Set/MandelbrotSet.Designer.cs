@@ -38,7 +38,6 @@
             this.restartMandelbrot = new System.Windows.Forms.ToolStripMenuItem();
             this.reloadMandelbrot = new System.Windows.Forms.ToolStripMenuItem();
             this.cloneMandelbrot = new System.Windows.Forms.ToolStripMenuItem();
-            this.characterEncodingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saveMandelbrot = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.infoApplication = new System.Windows.Forms.ToolStripMenuItem();
@@ -100,7 +99,6 @@
             this.restartMandelbrot,
             this.reloadMandelbrot,
             this.cloneMandelbrot,
-            this.characterEncodingToolStripMenuItem,
             this.saveMandelbrot});
             this.fractalToolStripMenuItem.Name = "fractalToolStripMenuItem";
             this.fractalToolStripMenuItem.Size = new System.Drawing.Size(80, 20);
@@ -110,7 +108,7 @@
             // 
             this.startMandelbrot.Image = ((System.Drawing.Image)(resources.GetObject("startMandelbrot.Image")));
             this.startMandelbrot.Name = "startMandelbrot";
-            this.startMandelbrot.Size = new System.Drawing.Size(178, 22);
+            this.startMandelbrot.Size = new System.Drawing.Size(200, 22);
             this.startMandelbrot.Text = "Start";
             this.startMandelbrot.Click += new System.EventHandler(this.startMandelbrot_Click);
             // 
@@ -118,7 +116,7 @@
             // 
             this.stopMandelbrot.Image = ((System.Drawing.Image)(resources.GetObject("stopMandelbrot.Image")));
             this.stopMandelbrot.Name = "stopMandelbrot";
-            this.stopMandelbrot.Size = new System.Drawing.Size(178, 22);
+            this.stopMandelbrot.Size = new System.Drawing.Size(200, 22);
             this.stopMandelbrot.Text = "Stop";
             this.stopMandelbrot.Click += new System.EventHandler(this.stopMandelbrot_Click);
             // 
@@ -126,7 +124,7 @@
             // 
             this.restartMandelbrot.Image = ((System.Drawing.Image)(resources.GetObject("restartMandelbrot.Image")));
             this.restartMandelbrot.Name = "restartMandelbrot";
-            this.restartMandelbrot.Size = new System.Drawing.Size(178, 22);
+            this.restartMandelbrot.Size = new System.Drawing.Size(200, 22);
             this.restartMandelbrot.Text = "Restart";
             this.restartMandelbrot.Click += new System.EventHandler(this.restartMandelbrot_Click);
             // 
@@ -134,31 +132,24 @@
             // 
             this.reloadMandelbrot.Image = ((System.Drawing.Image)(resources.GetObject("reloadMandelbrot.Image")));
             this.reloadMandelbrot.Name = "reloadMandelbrot";
-            this.reloadMandelbrot.Size = new System.Drawing.Size(178, 22);
-            this.reloadMandelbrot.Text = "Reload";
+            this.reloadMandelbrot.Size = new System.Drawing.Size(200, 22);
+            this.reloadMandelbrot.Text = "Reload                F5";
             this.reloadMandelbrot.Click += new System.EventHandler(this.reloadMandelbrot_Click);
             // 
             // cloneMandelbrot
             // 
             this.cloneMandelbrot.Image = ((System.Drawing.Image)(resources.GetObject("cloneMandelbrot.Image")));
             this.cloneMandelbrot.Name = "cloneMandelbrot";
-            this.cloneMandelbrot.Size = new System.Drawing.Size(178, 22);
-            this.cloneMandelbrot.Text = "Clone";
+            this.cloneMandelbrot.Size = new System.Drawing.Size(200, 22);
+            this.cloneMandelbrot.Text = "Clone                  Ctrl + C";
             this.cloneMandelbrot.Click += new System.EventHandler(this.cloneMandelbrot_Click);
-            // 
-            // characterEncodingToolStripMenuItem
-            // 
-            this.characterEncodingToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("characterEncodingToolStripMenuItem.Image")));
-            this.characterEncodingToolStripMenuItem.Name = "characterEncodingToolStripMenuItem";
-            this.characterEncodingToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
-            this.characterEncodingToolStripMenuItem.Text = "Character Encoding";
             // 
             // saveMandelbrot
             // 
             this.saveMandelbrot.Image = ((System.Drawing.Image)(resources.GetObject("saveMandelbrot.Image")));
             this.saveMandelbrot.Name = "saveMandelbrot";
-            this.saveMandelbrot.Size = new System.Drawing.Size(178, 22);
-            this.saveMandelbrot.Text = "Save";
+            this.saveMandelbrot.Size = new System.Drawing.Size(200, 22);
+            this.saveMandelbrot.Text = "Save                    Ctrl + S";
             this.saveMandelbrot.Click += new System.EventHandler(this.saveMandelbrot_Click);
             // 
             // aboutToolStripMenuItem
@@ -191,24 +182,24 @@
             // 
             this.printMandelbrot.Image = ((System.Drawing.Image)(resources.GetObject("printMandelbrot.Image")));
             this.printMandelbrot.Name = "printMandelbrot";
-            this.printMandelbrot.Size = new System.Drawing.Size(103, 22);
-            this.printMandelbrot.Text = "Print";
+            this.printMandelbrot.Size = new System.Drawing.Size(177, 22);
+            this.printMandelbrot.Text = "Print            Ctrl + P";
             this.printMandelbrot.Click += new System.EventHandler(this.printMandelbrot_Click);
             // 
             // closeApp
             // 
             this.closeApp.Image = ((System.Drawing.Image)(resources.GetObject("closeApp.Image")));
             this.closeApp.Name = "closeApp";
-            this.closeApp.Size = new System.Drawing.Size(103, 22);
-            this.closeApp.Text = "Close";
+            this.closeApp.Size = new System.Drawing.Size(177, 22);
+            this.closeApp.Text = "Close           Alt  + C";
             this.closeApp.Click += new System.EventHandler(this.closeApp_Click);
             // 
             // quitApp
             // 
             this.quitApp.Image = ((System.Drawing.Image)(resources.GetObject("quitApp.Image")));
             this.quitApp.Name = "quitApp";
-            this.quitApp.Size = new System.Drawing.Size(103, 22);
-            this.quitApp.Text = "Quit";
+            this.quitApp.Size = new System.Drawing.Size(177, 22);
+            this.quitApp.Text = "Quit             Alt  + Q";
             this.quitApp.Click += new System.EventHandler(this.quitApp_Click);
             // 
             // moreToolStripMenuItem
@@ -233,16 +224,16 @@
             // 
             this.defaultIteration.Image = ((System.Drawing.Image)(resources.GetObject("defaultIteration.Image")));
             this.defaultIteration.Name = "defaultIteration";
-            this.defaultIteration.Size = new System.Drawing.Size(152, 22);
-            this.defaultIteration.Text = "Set Default";
+            this.defaultIteration.Size = new System.Drawing.Size(177, 22);
+            this.defaultIteration.Text = "Set Default         F10";
             this.defaultIteration.Click += new System.EventHandler(this.defaultIteration_Click);
             // 
             // customIteration
             // 
             this.customIteration.Image = ((System.Drawing.Image)(resources.GetObject("customIteration.Image")));
             this.customIteration.Name = "customIteration";
-            this.customIteration.Size = new System.Drawing.Size(152, 22);
-            this.customIteration.Text = "Set Custom";
+            this.customIteration.Size = new System.Drawing.Size(177, 22);
+            this.customIteration.Text = "Set Custom        F11";
             this.customIteration.Click += new System.EventHandler(this.customIteration_Click);
             // 
             // iterateStatus
@@ -267,9 +258,11 @@
             this.Controls.Add(this.appStatus);
             this.Controls.Add(this.pictureOutputBox);
             this.Controls.Add(this.menuStrip1);
+            this.KeyPreview = true;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "MandelbrotSet";
             this.Text = "Mandelbrot Set";
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.keyboardShortcuts);
             ((System.ComponentModel.ISupportInitialize)(this.pictureOutputBox)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
@@ -289,7 +282,6 @@
         private System.Windows.Forms.ToolStripMenuItem restartMandelbrot;
         private System.Windows.Forms.ToolStripMenuItem reloadMandelbrot;
         private System.Windows.Forms.ToolStripMenuItem cloneMandelbrot;
-        private System.Windows.Forms.ToolStripMenuItem characterEncodingToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem saveMandelbrot;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem infoApplication;
