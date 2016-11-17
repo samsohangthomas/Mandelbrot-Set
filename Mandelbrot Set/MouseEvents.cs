@@ -12,13 +12,18 @@ namespace Mandelbrot_Set
 
 
         //Menu Events
-        
-        private void menuBar(object sender, EventArgs e)
+      
+
+        private void menuBarEnter(object sender, EventArgs e)
         {
             this.Cursor = Cursors.Default;
+
         }
+        private void menuBarLeave(object sender, EventArgs e)
+        {
+            this.Cursor = c2;
 
-
+        }
 
 
 

@@ -53,6 +53,9 @@
     <Compile Include="MandelbrotSet.Designer.cs">
       <DependentUpon>MandelbrotSet.cs</DependentUpon>
     </Compile>
+    <Compile Include="MenuEvents.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="MouseEvents.cs">
       <SubType>Form</SubType>
     </Compile>
