@@ -252,7 +252,7 @@
         15+/g+IXifxvP2rbRMsAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="setDefaultToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="defaultIteration.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29m
         dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAFhSURBVDhPjdK7qsJQFATQ+bT8VRAExcLCwiaFhYUg
@@ -264,7 +264,7 @@
         PO/0HXAWp/ZAGIZ/ZE/ypN3zPL2jEP9DDuQdxkEjCQAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="setCustomToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="customIteration.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29m
         dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAGNSURBVDhPjdI9S0JxGAXw8xUkCAQHB4eWBgeHxOgW

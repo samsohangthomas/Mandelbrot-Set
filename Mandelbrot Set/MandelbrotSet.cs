@@ -24,9 +24,7 @@ namespace Mandelbrot_Set
         private  Boolean action, mousePressed, rectangle, finished, first = true;
         private  float xy;
 
-
-
-
+        
 
 
         //Bitmap and graphics 
@@ -41,7 +39,12 @@ namespace Mandelbrot_Set
             InitializeComponent();
             setPictureBoxSize(640, 480);
             init();
+            disableResizeWindow();
+            disableMaximizeWindow();
+           
         }
+
+
 
 
         // Partial class is created for mouse Events
@@ -206,7 +209,16 @@ namespace Mandelbrot_Set
             return (float)j / (float)MAX;
         }
 
-        
+        public void disableResizeWindow()
+        {
+            this.FormBorderStyle = FormBorderStyle.FixedDialog;
+        }
+        public void disableMaximizeWindow()
+        {
+            MaximizeBox = false;
+
+        }
+
         public void showStatus(String status)
         {
             appStatus.Text = status;

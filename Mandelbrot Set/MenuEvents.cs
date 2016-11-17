@@ -12,6 +12,7 @@ namespace Mandelbrot_Set
     partial class MandelbrotSet
     {
 
+        //application submenus event
 
         private void startMandelbrot_Click(object sender, EventArgs e)
         {        
@@ -24,14 +25,12 @@ namespace Mandelbrot_Set
         }
 
 
-
         private void reloadMandelbrot_Click(object sender, EventArgs e)
         {
             this.stop();
             start();
         }
-
-
+        
 
         private void cloneMandelbrot_Click(object sender, EventArgs e)
         {
@@ -79,6 +78,8 @@ namespace Mandelbrot_Set
             }
         }
 
+        //About submenus event
+
         private void infoApplication_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Mandelbrot Application v0.1 with customization. Thank You.");
@@ -86,7 +87,7 @@ namespace Mandelbrot_Set
         }
 
 
-
+        //window submenus event
 
         private void printDocument_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         {
@@ -116,9 +117,40 @@ namespace Mandelbrot_Set
 
 
 
+        //more submenus event
+
+        private void defaultIteration_Click(object sender, EventArgs e)
+        {
+            MAX = 256;
+            start();
+            iterateStat("Default Iteration 256 Times");
+        }
+
+
+        private void customIteration_Click(object sender, EventArgs e)
+        {
+            IterationForm obj = new IterationForm(this);
+            obj.Show();
+        }
+
+        public void redraw(int val)
+        {
+            MAX = val;
+            start();
+        }
+        //clearing pictureOutputBox
+
         private void stop() {
             pictureOutputBox.Image = null;
 
         }
+
+        // iteration status
+
+        public void iterateStat(String stat)
+        {
+            iterateStatus.Text = stat;
+        }
+
     }
 }

@@ -48,9 +48,9 @@
             this.quitApp = new System.Windows.Forms.ToolStripMenuItem();
             this.moreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.iterationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.setDefaultToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.setCustomToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.label1 = new System.Windows.Forms.Label();
+            this.defaultIteration = new System.Windows.Forms.ToolStripMenuItem();
+            this.customIteration = new System.Windows.Forms.ToolStripMenuItem();
+            this.iterateStatus = new System.Windows.Forms.Label();
             this.printDocument = new System.Drawing.Printing.PrintDocument();
             ((System.ComponentModel.ISupportInitialize)(this.pictureOutputBox)).BeginInit();
             this.menuStrip1.SuspendLayout();
@@ -222,35 +222,37 @@
             // iterationToolStripMenuItem
             // 
             this.iterationToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.setDefaultToolStripMenuItem,
-            this.setCustomToolStripMenuItem});
+            this.defaultIteration,
+            this.customIteration});
             this.iterationToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("iterationToolStripMenuItem.Image")));
             this.iterationToolStripMenuItem.Name = "iterationToolStripMenuItem";
-            this.iterationToolStripMenuItem.Size = new System.Drawing.Size(118, 22);
+            this.iterationToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.iterationToolStripMenuItem.Text = "Iteration";
             // 
-            // setDefaultToolStripMenuItem
+            // defaultIteration
             // 
-            this.setDefaultToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("setDefaultToolStripMenuItem.Image")));
-            this.setDefaultToolStripMenuItem.Name = "setDefaultToolStripMenuItem";
-            this.setDefaultToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
-            this.setDefaultToolStripMenuItem.Text = "Set Default";
+            this.defaultIteration.Image = ((System.Drawing.Image)(resources.GetObject("defaultIteration.Image")));
+            this.defaultIteration.Name = "defaultIteration";
+            this.defaultIteration.Size = new System.Drawing.Size(152, 22);
+            this.defaultIteration.Text = "Set Default";
+            this.defaultIteration.Click += new System.EventHandler(this.defaultIteration_Click);
             // 
-            // setCustomToolStripMenuItem
+            // customIteration
             // 
-            this.setCustomToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("setCustomToolStripMenuItem.Image")));
-            this.setCustomToolStripMenuItem.Name = "setCustomToolStripMenuItem";
-            this.setCustomToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
-            this.setCustomToolStripMenuItem.Text = "Set Custom";
+            this.customIteration.Image = ((System.Drawing.Image)(resources.GetObject("customIteration.Image")));
+            this.customIteration.Name = "customIteration";
+            this.customIteration.Size = new System.Drawing.Size(152, 22);
+            this.customIteration.Text = "Set Custom";
+            this.customIteration.Click += new System.EventHandler(this.customIteration_Click);
             // 
-            // label1
+            // iterateStatus
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(461, 7);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(140, 13);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Default Iteration Times  256 ";
+            this.iterateStatus.AutoSize = true;
+            this.iterateStatus.Location = new System.Drawing.Point(461, 7);
+            this.iterateStatus.Name = "iterateStatus";
+            this.iterateStatus.Size = new System.Drawing.Size(137, 13);
+            this.iterateStatus.TabIndex = 3;
+            this.iterateStatus.Text = "Default Iteration 256 Times ";
             // 
             // printDocument
             // 
@@ -261,7 +263,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(639, 541);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.iterateStatus);
             this.Controls.Add(this.appStatus);
             this.Controls.Add(this.pictureOutputBox);
             this.Controls.Add(this.menuStrip1);
@@ -297,9 +299,9 @@
         private System.Windows.Forms.ToolStripMenuItem quitApp;
         private System.Windows.Forms.ToolStripMenuItem moreToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem iterationToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem setDefaultToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem setCustomToolStripMenuItem;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ToolStripMenuItem defaultIteration;
+        private System.Windows.Forms.ToolStripMenuItem customIteration;
+        private System.Windows.Forms.Label iterateStatus;
         private System.Drawing.Printing.PrintDocument printDocument;
     }
 }

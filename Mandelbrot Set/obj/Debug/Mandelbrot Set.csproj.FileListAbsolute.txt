@@ -7,3 +7,4 @@ c:\users\solutionone\documents\visual studio 2015\Projects\Mandelbrot Set\Mandel
 c:\users\solutionone\documents\visual studio 2015\Projects\Mandelbrot Set\Mandelbrot Set\obj\Debug\Mandelbrot Set.pdb
 c:\users\solutionone\documents\visual studio 2015\Projects\Mandelbrot Set\Mandelbrot Set\obj\Debug\Mandelbrot Set.csprojResolveAssemblyReference.cache
 c:\users\solutionone\documents\visual studio 2015\Projects\Mandelbrot Set\Mandelbrot Set\obj\Debug\Mandelbrot_Set.MandelbrotSet.resources
+C:\Users\solutionone\Documents\Visual Studio 2015\Projects\Mandelbrot Set\Mandelbrot Set\obj\Debug\Mandelbrot_Set.IterationForm.resources

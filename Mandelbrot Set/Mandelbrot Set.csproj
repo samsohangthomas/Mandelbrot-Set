@@ -47,6 +47,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="HSB.cs" />
+    <Compile Include="IterationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IterationForm.Designer.cs">
+      <DependentUpon>IterationForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="MandelbrotSet.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -61,6 +67,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="IterationForm.resx">
+      <DependentUpon>IterationForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MandelbrotSet.resx">
       <DependentUpon>MandelbrotSet.cs</DependentUpon>
     </EmbeddedResource>
