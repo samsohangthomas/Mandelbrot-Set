@@ -10,7 +10,7 @@ namespace Mandelbrot_Set
     partial class MandelbrotSet
     {
 
-
+        //keyboard key checked for ALT, CONTROL AND FUNCTION KEY
         private void keyboardShortcuts(object sender, KeyEventArgs e)
         {
             if (e.Control)

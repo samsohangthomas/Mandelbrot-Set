@@ -20,7 +20,7 @@ namespace Mandelbrot_Set
         private  double EX = 0.6;    // end value real
         private  double EY = 1.125;  // end value imaginary
         private  int x1, y1, xs, ys, xe, ye;
-        private  double xstart, ystart, xende, yende, xzoom, yzoom;
+        private  double xstart, ystart, xende, yende, xzoom, yzoom; 
         private  Boolean action, mousePressed, rectangle, finished, first = true;
         private  float xy;
 
@@ -33,6 +33,7 @@ namespace Mandelbrot_Set
         private Cursor c1, c2;
 
         
+        //constructor
 
         public MandelbrotSet()
         {
@@ -46,20 +47,12 @@ namespace Mandelbrot_Set
 
 
 
-
-        // Partial class is created for mouse Events
-
-
+        //picture box for storing output as image
         private void pictureOutputBox_Paint(object sender, PaintEventArgs e)
         {
             update();
         }
 
-
-        private void setPictureBoxSize(int width, int height)
-        {
-            this.pictureOutputBox.Size = new System.Drawing.Size(width, height);
-        }
 
 
 
@@ -209,16 +202,32 @@ namespace Mandelbrot_Set
             return (float)j / (float)MAX;
         }
 
+
+
+
+
+        //setting size of picture box
+        private void setPictureBoxSize(int width, int height)
+        {
+            this.pictureOutputBox.Size = new System.Drawing.Size(width, height);
+        }
+
+
+        //disable resize window 
         public void disableResizeWindow()
         {
             this.FormBorderStyle = FormBorderStyle.FixedDialog;
         }
+
+
+        //disable Maximize window
         public void disableMaximizeWindow()
         {
             MaximizeBox = false;
 
         }
 
+        //showing application status
         public void showStatus(String status)
         {
             appStatus.Text = status;
